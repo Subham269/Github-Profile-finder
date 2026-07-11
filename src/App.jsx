@@ -1,4 +1,5 @@
 import Github from './Github'
+import "./App.css"
 function App()
 {
   return (

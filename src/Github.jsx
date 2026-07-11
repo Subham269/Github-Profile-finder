@@ -21,7 +21,7 @@ function Github()
             }))
     }
     return (
-        <div>
+        <div className="container">
             <input type="text" placeholder="Enter Github Username" 
             onChange={event=>{setValue(event.target.value)
             }}

@@ -1,0 +1,32 @@
+.container 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input {
+    padding : 15px 20px;
+    width: 350px;
+    margin-right: 30px;
+    border-radius: 20px;
+    border: none;
+    font-size: 16px;
+    background: white;
+    color: #333;
+    box-shadow: 0 4px 12px rgba(0,0,0, 0.8);
+    transition : all 0.3s ease;
+}
+input::placeholder{
+    color: #888;
+}
+input:focus{
+    outline: none;
+    transform: scale(1.1);
+}
+h1 {
+    width: 100%;
+    text-align : center;
+    margin-top: 200px;
+    margin-bottom: 20px;
+    font-size: 65px;
+}
