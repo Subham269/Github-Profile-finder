@@ -31,15 +31,15 @@ function Github()
                     setLoading(true)
                 }}>Search</button>
             </div>
-            {invalid && (<p className="grp">User Not Found</p>)}
+            {invalid && (<p id="lel" className="grp">User Not Found</p>)}
             {loading && (
                 <p className="grp">Searching...</p>
             )}
             {!invalid && !loading && profile && (
                 <div className="grp">
-                    <img src={profile.avatar_url} width="100vh"/>
-                    <p>{profile.name}</p>
-                    <p>{profile.bio}</p>
+                    <img src={profile.avatar_url}/>
+                    <p id="name">{profile.name}</p>
+                    <p id="bio">{profile.bio}</p>
                     <p>Repos : {profile.public_repos}</p>
                     <p>Followers : {profile.followers}</p>
                 </div>
