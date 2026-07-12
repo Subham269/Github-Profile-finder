@@ -21,20 +21,22 @@ function Github()
             }))
     }
     return (
-        <div className="container">
-            <input type="text" placeholder="Enter Github Username" 
-            onChange={event=>{setValue(event.target.value)
-            }}
-            />
-            <button onClick={()=>{fetchProfile() 
-                setLoading(true)
-            }}>Search</button>
-            {invalid && (<p>User Not Found</p>)}
+        <div className="page">
+            <div id="search_bar">
+                <input type="text" placeholder="Enter Github Username" 
+                onChange={event=>{setValue(event.target.value)
+                }}
+                />
+                <button onClick={()=>{fetchProfile() 
+                    setLoading(true)
+                }}>Search</button>
+            </div>
+            {invalid && (<p className="grp">User Not Found</p>)}
             {loading && (
-                <p>Searching...</p>
+                <p className="grp">Searching...</p>
             )}
             {!invalid && !loading && profile && (
-                <div>
+                <div className="grp">
                     <img src={profile.avatar_url} width="100vh"/>
                     <p>{profile.name}</p>
                     <p>{profile.bio}</p>
@@ -42,7 +44,7 @@ function Github()
                     <p>Followers : {profile.followers}</p>
                 </div>
             )}
-        </div>
+            </div>
     )
     
 }
