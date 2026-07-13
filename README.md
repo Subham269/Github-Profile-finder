@@ -53,7 +53,7 @@ npm run build
 
 ## 📸 Preview
 
-<!-- Add a screenshot of your app here -->![alt text](image-1.png)
+<img width="1832" height="847" alt="Screenshot 2026-07-13 180658" src="https://github.com/user-attachments/assets/f3d772da-e4fd-4023-a708-f766cdb39cba" />
 <!-- ![App Screenshot](./screenshot.png) -->
 
 ## 📚 What I Learned
